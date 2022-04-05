@@ -8,7 +8,7 @@ fn main() {
 
     //just like variables initially, constants are immutable.
     //unlike variables, constants are always immutable and can never be made mutuable
-
+    //use uppercase seperate with an underscore when naming constants
     const THREE_HOURS_IN_SECONDS : u32 = 60 * 60 * 3;
     println!("Three hours in seconds is {} seconds", THREE_HOURS_IN_SECONDS);
 
@@ -32,4 +32,18 @@ fn main() {
 
     let spaces = "   ";
     let spaces = spaces.len();
+
+    // DATA-TYPES
+
+    let guess : u32 = "42".parse().expect("Not a number");
+
+
+
+    // Scalar Types
+    // - integers, floating-points, booleans, and characters.
+
+    // Integer Types
+    // signed varaints of integer types can store from -2^(n-1) - 2^(n-1)-1
+    // unsigned variants of integer types can store from 0 - 2^(n-1)-1
+    // where n is the number of bits.
 }
