@@ -31,11 +31,11 @@ fn main() {
     // you can change the type but reuse the same name in shadowing
 
     let spaces = "   ";
-    let spaces = spaces.len();
+    let _spaces = spaces.len();
 
     // DATA-TYPES
 
-    let guess : u32 = "42".parse().expect("Not a number");
+    let _guess : u32 = "42".parse().expect("Not a number");
 
 
 
@@ -46,4 +46,31 @@ fn main() {
     // signed varaints of integer types can store from -2^(n-1) - 2^(n-1)-1
     // unsigned variants of integer types can store from 0 - 2^(n-1)-1
     // where n is the number of bits.
+
+    // Integer Overflow
+
+    // NUMERIC OPERATIONS
+    let _sum = 5 + 10;
+
+    let _difference = 95.5 - 4.3;
+
+    let _product = 4 * 30;
+
+    let _quotient = 56.7 / 32.2;
+    let _floored = 2 / 3; // Results in 0
+
+    let _remainder = 43 % 5;
+
+    // BOOLEAN TYPES
+
+    let t = true;
+
+    let f: bool = false; // with explicit type annotation
+
+    // Character Types
+    // char types are specified with single quote,
+    // as opposed to string literals which uses double quotes
+
+    let c = 'z';
+    let z = 'Z';
 }
