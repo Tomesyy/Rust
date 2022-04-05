@@ -94,4 +94,34 @@ fn main() {
     println!("x: {}, y: {}, z: {}", x, y, z);
     println!("x2: {}, y2: {}, z2: {}", x2, y2, z2);
 
+
+    // ARRAY TYPES
+    // unlike tuples, every element of an array must have the same type
+    // arrays are fixed in size isn't allowed to grow or shrink
+    // arrays are useful when you know the numbers of element will not need to change
+
+
+    let _a: [i32; 5] = [1, 2, 3, 4, 5];
+    let _months = ["January", "February", "March", "April", "May", "June", "July",
+                                "August", "September", "October", "November", "December"];
+
+    // initializing an array to contain the same value for each element.
+
+    let _b = [3; 5]; // [3, 3, 3, 3, 3];
+
+    // an array is a single chunk of memory of a known fixed size
+    // that can be allocated on the stack
+
+    let a = [1, 2, 3, 4, 5];
+
+    let first = a[0];
+    let second = a[1];
+
+    println!("first: {}, second: {}", first, second);
+
+    // program will panick at runtime 'index out of bound' for code below
+    
+    // let invalid_element = a[6];
+
+    // println!("invalid element: {}", invalid_element);
 }
