@@ -63,14 +63,35 @@ fn main() {
 
     // BOOLEAN TYPES
 
-    let t = true;
+    let _t = true;
 
-    let f: bool = false; // with explicit type annotation
+    let _f: bool = false; // with explicit type annotation
 
     // Character Types
     // char types are specified with single quote,
     // as opposed to string literals which uses double quotes
 
-    let c = 'z';
-    let z = 'Z';
+    let _c = 'z';
+    let _z = 'Z';
+
+    // COMPOUND TYPES
+
+    // Tuple type
+    // general way of grouping together a number of values with
+    // a variety of types into one compound type
+
+    let _tup: (i32, f64, u8) = (-500, 6.4, 255);
+
+    let tup: (u32, f64, u32) = (300, 6.4, 300);
+
+    let (x, y, z) = tup; // destructuring a tuple
+
+    let x2 = tup.0;
+    let y2 = tup.1;
+    let z2 = tup.2;
+   
+
+    println!("x: {}, y: {}, z: {}", x, y, z);
+    println!("x2: {}, y2: {}, z2: {}", x2, y2, z2);
+
 }
